@@ -68,9 +68,11 @@ make shell - Get into shell of web container
 │    │   ├── __init__.py
 │    │   └── user_creator.py
 │    ├── tests
-│    │   └── __init__.py
+│    │   ├── __init__.py
+│    │   └── factories.py
 │    └── views.py
 ├── .gitignore
+├── conftest.py
 ├── docker-compose.yml
 ├── Dockerfile
 ├── Makefile
