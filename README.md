@@ -45,31 +45,31 @@ make shell - Get into shell of web container
 │   ├── urls.py
 │   └── wsgi.py
 ├── docs
-└── users
-    ├── __init__.py
-    ├── admin.py
-    ├── api
-    │   ├── __init__.py
-    │   └── v1
-    │       ├── __init__.py
-    │       ├── filters.py
-    │       ├── permissions.py
-    │       ├── routers.py
-    │       ├── serializers.py
-    │       └── views.py
-    ├── apps.py
-    ├── migrations
-    │   ├── 0001_initial.py
-    │   └── __init__.py
-    ├── models
-    │   ├── __init__.py
-    │   └── user.py
-    ├── services
-    │   ├── __init__.py
-    │   └── user_creator.py
-    ├── tests
-    │   └── __init__.py
-    └── views.py
+├── users
+│    ├── __init__.py
+│    ├── admin.py
+│    ├── api
+│    │   ├── __init__.py
+│    │   └── v1
+│    │       ├── __init__.py
+│    │       ├── filters.py
+│    │       ├── permissions.py
+│    │       ├── routers.py
+│    │       ├── serializers.py
+│    │       └── views.py
+│    ├── apps.py
+│    ├── migrations
+│    │   ├── 0001_initial.py
+│    │   └── __init__.py
+│    ├── models
+│    │   ├── __init__.py
+│    │   └── user.py
+│    ├── services
+│    │   ├── __init__.py
+│    │   └── user_creator.py
+│    ├── tests
+│    │   └── __init__.py
+│    └── views.py
 ├── .gitignore
 ├── docker-compose.yml
 ├── Dockerfile
