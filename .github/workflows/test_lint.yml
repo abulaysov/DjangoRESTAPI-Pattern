@@ -1,0 +1,21 @@
+name: Lint-test
+
+on:
+  pull_request:
+    branches:
+      - staging
+      - main
+
+jobs:
+  test-lint:
+    name: Test and Lint
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Lint
+        run: docker-compose run --rm web sh -c "make lint"
+
+      - name: Test
+        run: docker-compose run --rm -u root web sh -c "pytest"

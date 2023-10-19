@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "django-rest-app-pattern"
+version = "0.1.0"
+description = ""
+authors = ["abulaysov <abulaysovv@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.6"
+djangorestframework = "^3.14.0"
+psycopg2-binary = "^2.9.9"
+django-cors-headers = "^4.3.0"
+drf-spectacular = "^0.26.5"
+gunicorn = "^21.2.0"
+django-filter = "^23.3"
+python-dotenv = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest-django = "^4.5.2"
+black = "^23.10.0"
+flake8 = "^6.1.0"
+isort = "^5.12.0"
+mypy = "^1.6.1"
+factory-boy = "^3.3.0"
+django-stubs = "^4.2.5"
+types-psycopg2 = "^2.9.21.14"
+djangorestframework-stubs = "^3.14.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 79
+py36 = true
+skip-string-normalization = true
+exclude = '''
+  # Default exclude
+  \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+
+  # Custom excludes
+  | manage\.py
+  | \.pgdata
+  | migrations
+'''
+
+[tool.mypy]
+exclude = [
+    "settings\\.py$",  # TOML's double-quoted strings require escaping backslashes
+    'two\.pyi$',  # but TOML's single-quoted strings do not
+    '^three\.',
+]
