@@ -54,10 +54,3 @@ exclude = '''
   | \.pgdata
   | migrations
 '''
-
-[tool.mypy]
-exclude = [
-    "settings\\.py$",  # TOML's double-quoted strings require escaping backslashes
-    'two\.pyi$',  # but TOML's single-quoted strings do not
-    '^three\.',
-]
