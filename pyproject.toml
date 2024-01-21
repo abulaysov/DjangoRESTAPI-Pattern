@@ -54,3 +54,7 @@ exclude = '''
   | \.pgdata
   | migrations
 '''
+
+[tool.mypy]
+exclude = ["configs", "tests*"]
+allow_untyped_globals = true

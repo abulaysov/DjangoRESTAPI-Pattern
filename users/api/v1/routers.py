@@ -1,1 +1,1 @@
-urls: list = []
+urls = []
