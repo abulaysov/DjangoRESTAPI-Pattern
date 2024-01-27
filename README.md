@@ -1,5 +1,12 @@
 ## Django REST API Pattern
 
+___
+
+### Requirements:
+- Docker
+- docker-compose
+___
+
 ### Usage tools:
 
 ```
@@ -8,7 +15,7 @@ Django == 4.2 LTS
 drf == 3.14
 PostgreSQL == 14
 ```
-
+___
 ### Type checker tools:
 ```
 black
@@ -16,7 +23,7 @@ flake8
 isort
 mypy
 ```
-
+___
 ### Commands for management project:
 ```
 make local_up - Build and up project
@@ -26,8 +33,8 @@ make format - Format code with usage black and isort
 make test - Run tests
 make shell - Get into shell of web container
 ```
-
-### Project structure:
+___
+### Project's structure:
 ```
 ├── .github
 │   └── workflows
@@ -40,7 +47,6 @@ make shell - Get into shell of web container
 │   │       └── wait_for_db.py
 │   ├── __init__.py
 │   ├── asgi.py
-│   ├── base_classes.py
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
