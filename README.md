@@ -29,7 +29,7 @@ ___
 make local_up - Build and up project
 make local_down - Stop and delete docker containers
 make lint - Check linters
-make format - Format code with usage black and isort
+make format - Format code with using black and isort
 make test - Run tests
 make shell - Get into shell of web container
 ```
