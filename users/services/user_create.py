@@ -16,5 +16,3 @@ class UserCreateService:
 
     def _send_email(self):
         print(f"Sending email: {self.email}")
-
-
