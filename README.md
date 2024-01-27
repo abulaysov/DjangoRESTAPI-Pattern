@@ -52,10 +52,11 @@ make shell - Get into shell of web container
 │    │   ├── __init__.py
 │    │   └── v1
 │    │       ├── __init__.py
+│    │       ├── serializers
+│    │       │   └── __init__.py
 │    │       ├── filters.py
 │    │       ├── permissions.py
 │    │       ├── routers.py
-│    │       ├── serializers.py
 │    │       └── views.py
 │    ├── apps.py
 │    ├── migrations
