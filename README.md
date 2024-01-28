@@ -73,7 +73,7 @@ ___
 │    │   └── user.py
 │    ├── services
 │    │   ├── __init__.py
-│    │   └── user_creator.py
+│    │   └── user_create.py
 │    ├── tests
 │    │   ├── __init__.py
 │    │   └── factories.py
